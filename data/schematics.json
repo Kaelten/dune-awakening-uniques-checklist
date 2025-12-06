@@ -2482,6 +2482,18 @@
       "image": "0e8304aa6f4d49092e62f89208f41afe1538c34e56e4cf62f20578e41efa8d7b.png"
     },
     {
+      "name": "Dune Dancer Stillsuit Garment",
+      "types": [
+        "Armor",
+        "Stillsuit"
+      ],
+      "location": [
+        ""
+      ],
+      "url": "https://dune.gaming.tools/items/stillsuit_choam_unique_dashed05_top",
+      "image": "duraluminum-dune-dancer-stillsuit-garment.webp"
+    },
+    {
       "name": "Extravagant Message",
       "types": [
         "Weapon",
@@ -3373,6 +3385,18 @@
       ],
       "url": "https://awakening.wiki/Compact_Compactor_Mk6",
       "image": "803526a226c99d4c16eab065d468ec83e3ec2bff0d7f350541150ff24bf1f599.png"
+    },
+    {
+      "name": "Crew Chief's Stillsuit Garment",
+      "types": [
+        "Armor",
+        "Stillsuit"
+      ],
+      "location": [
+        ""
+      ],
+      "url": "https://dune.gaming.tools/items/stillsuit_choam_unique_dashed06_top",
+      "image": "plastanium-crew-chiefs-stillsuit-garment.webp"
     },
     {
       "name": "Dampened Sandcrawler Treads",
