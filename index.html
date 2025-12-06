@@ -1,142 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dune Awakening - Unique Schematics Checklist</title>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dune Awakening - Unique Schematics Checklist</title>
 
-		<link rel="stylesheet" href="styles/base_5c074edd431ffaa1.css">
-		<link rel="stylesheet" href="styles/categories_7722d511beede77c.css">
-		<link rel="stylesheet" href="styles/controls_3dad38c88a05745b.css">
-		<link rel="stylesheet" href="styles/footer_d83b867813458a56.css">
-		<link rel="stylesheet" href="styles/forms_7c972648adcdb8fd.css">
-		<link rel="stylesheet" href="styles/header_90a8daed6f27f0b9.css">
-		<link rel="stylesheet" href="styles/items_424981618d14774c.css">
-		<link rel="stylesheet" href="styles/layout_0de26466f0f2084b.css">
-		<link rel="stylesheet" href="styles/scrollbar_b88a2726499782d7.css">
-		<link rel="stylesheet" href="styles/sidebar_5cc5ca49946417ea.css">
-		<link rel="stylesheet" href="styles/stats_35daa623be1e0be3.css">
-		<link rel="stylesheet" href="styles/toast_c16e4983634fb008.css">
+    <link rel="stylesheet" href="styles/base_5c074edd431ffaa1.css">
+    <link rel="stylesheet" href="styles/categories_7722d511beede77c.css">
+    <link rel="stylesheet" href="styles/controls_3dad38c88a05745b.css">
+    <link rel="stylesheet" href="styles/footer_d83b867813458a56.css">
+    <link rel="stylesheet" href="styles/forms_7c972648adcdb8fd.css">
+    <link rel="stylesheet" href="styles/header_90a8daed6f27f0b9.css">
+    <link rel="stylesheet" href="styles/items_424981618d14774c.css">
+    <link rel="stylesheet" href="styles/layout_0de26466f0f2084b.css">
+    <link rel="stylesheet" href="styles/scrollbar_b88a2726499782d7.css">
+    <link rel="stylesheet" href="styles/sidebar_5cc5ca49946417ea.css">
+    <link rel="stylesheet" href="styles/stats_35daa623be1e0be3.css">
+    <link rel="stylesheet" href="styles/toast_c16e4983634fb008.css">
 
-		<link
-			rel="icon"
-			href="https://www.google.com/s2/favicons?domain=duneawakening.com&sz=32"
-		/>
-		<script type="module" src="scripts/main_4e83aec6a330e628.js"></script>
-		<script type="module" src="scripts/constants_9fe2dbbb9bdba702.js"></script>
-		<script type="module" src="scripts/data_09b4d589a60ee701.js"></script>
-		<script type="module" src="scripts/dom_85dfe6657d89fa82.js"></script>
-		<script type="module" src="scripts/filters_8b34a0006faeadfb.js"></script>
-		<script type="module" src="scripts/toast_b747dc57bf6fa14f.js"></script>
-		<script type="module" src="scripts/undoRedo_f06bce0f792397af.js"></script>
-		<script type="module" src="scripts/search_a2117fa86c6e8c48.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<h1>Dune Awakening</h1>
-				<h1>Unique Schematics Checklist</h1>
+    <link
+            rel="icon"
+            href="https://www.google.com/s2/favicons?domain=duneawakening.com&sz=32"
+    />
+    <script type="module" src="scripts/main_4e83aec6a330e628.js"></script>
+    <script type="module" src="scripts/constants_9fe2dbbb9bdba702.js"></script>
+    <script type="module" src="scripts/data_09b4d589a60ee701.js"></script>
+    <script type="module" src="scripts/dom_85dfe6657d89fa82.js"></script>
+    <script type="module" src="scripts/filters_8b34a0006faeadfb.js"></script>
+    <script type="module" src="scripts/toast_b747dc57bf6fa14f.js"></script>
+    <script type="module" src="scripts/undoRedo_f06bce0f792397af.js"></script>
+    <script type="module" src="scripts/search_a2117fa86c6e8c48.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Dune Awakening</h1>
+        <h1>Unique Schematics Checklist</h1>
 
-				<div class="subtitle">Track all unique schematics across Arrakis</div>
-				<br
-				<p>
-					⚠️ Note: Your progress will be retained on this machine/browser.
-				</p>
-				<p>
-					Use the Export/Import buttons to move progress between devices or back
-					up.
-				</p>
-				<br>
-				<p>
-					Finished: Copper ✅, Iron ✅, Steel ✅, Aluminum ✅, Duraluminum ❌, Plastanium ❌
-				</p>
-			</div>
+        <div class="subtitle">Track all unique schematics across Arrakis</div>
+        <br>
+        <p>
+            ⚠️ Note: Your progress will be retained on this machine/browser.
+        </p>
+        <p>
+            Use the Export/Import buttons to move progress between devices or back
+            up.
+        </p>
+        <br>
+        <p>
+            Finished: Copper ✅, Iron ✅, Steel ✅, Aluminum ✅, Duraluminum ❌, Plastanium ❌
+        </p>
+    </div>
 
-			<div class="controls">
-				<button class="control-btn" onclick="toggleAll(true)">Check All</button>
-				<button class="control-btn" onclick="toggleAll(false)">
-					Uncheck All
-				</button>
+    <div class="controls">
+        <button class="control-btn" onclick="toggleAll(true)">Check All</button>
+        <button class="control-btn" onclick="toggleAll(false)">
+            Uncheck All
+        </button>
 
-				<input
-					type="text"
-					class="search-box"
-					placeholder="Search schematics..."
-					oninput="onSearchInput(this.value)"
-				/>
-				<button class="control-btn" id="undoBtn" onclick="undoLast()" disabled>
-					Undo
-				</button>
-				<button class="control-btn" id="redoBtn" onclick="redoLast()" disabled>
-					Redo
-				</button>
-				<div class="settings">
-					<button
-						class="control-btn settings-btn"
-						id="settingsBtn"
-						onclick="toggleSettings()"
-					>
-						⚙️
-					</button>
-					<div class="settings-menu" id="settingsMenu">
-						<button
-							class="control-btn"
-							data-icon="📥"
-							onclick="importProgress()"
-						>
-							Import
-						</button>
-						<button
-							class="control-btn"
-							data-icon="📤"
-							onclick="exportProgress()"
-						>
-							Export
-						</button>
-						<button
-							class="control-btn"
-							data-icon="👁️"
-							id="hideCheckedBtn"
-							onclick="toggleHideChecked()"
-						>
-							Hide checked items
-						</button>
-					</div>
-				</div>
-			</div>
+        <input
+                type="text"
+                class="search-box"
+                placeholder="Search schematics..."
+                oninput="onSearchInput(this.value)"
+        />
+        <button class="control-btn" id="undoBtn" onclick="undoLast()" disabled>
+            Undo
+        </button>
+        <button class="control-btn" id="redoBtn" onclick="redoLast()" disabled>
+            Redo
+        </button>
+        <div class="settings">
+            <button
+                    class="control-btn settings-btn"
+                    id="settingsBtn"
+                    onclick="toggleSettings()"
+            >
+                ⚙️
+            </button>
+            <div class="settings-menu" id="settingsMenu">
+                <button
+                        class="control-btn"
+                        data-icon="📥"
+                        onclick="importProgress()"
+                >
+                    Import
+                </button>
+                <button
+                        class="control-btn"
+                        data-icon="📤"
+                        onclick="exportProgress()"
+                >
+                    Export
+                </button>
+                <button
+                        class="control-btn"
+                        data-icon="👁️"
+                        id="hideCheckedBtn"
+                        onclick="toggleHideChecked()"
+                >
+                    Hide checked items
+                </button>
+            </div>
+        </div>
+    </div>
 
-			<div class="filter-bar">
-				<div id="filters" class="filters" aria-label="Filters"></div>
-			</div>
+    <div class="filter-bar">
+        <div id="filters" class="filters" aria-label="Filters"></div>
+    </div>
 
-			<div class="stats">
-				<div class="stats-text">
-					Progress: <span id="checkedCount">0</span> /
-					<span id="totalCount">0</span> (<span id="percentage">0</span>%)
-				</div>
-			</div>
+    <div class="stats">
+        <div class="stats-text">
+            Progress: <span id="checkedCount">0</span> /
+            <span id="totalCount">0</span> (<span id="percentage">0</span>%)
+        </div>
+    </div>
 
-			<div id="categories"></div>
+    <div id="categories"></div>
 
-			<div
-				id="toast"
-				class="toast hidden"
-				role="status"
-				aria-live="polite"
-			></div>
+    <div
+            id="toast"
+            class="toast hidden"
+            role="status"
+            aria-live="polite"
+    ></div>
 
-			<div class="footer"></div>
-		</div>
-		<button id="openLocationsSidebarBtn" class="sidebar-toggle-btn control-btn" aria-label="Open Farming Locations">
-			<span>Farming Locations</span>
-		</button>
-		<div class="locations-sidebar" id="locationsSidebar" aria-modal="true" role="dialog">
-			<div class="sidebar-header">
-				<h2>Farming Locations</h2>
-				<button class="close-sidebar-btn" aria-label="Close" id="closeLocationsSidebarBtn">✖</button>
-			</div>
-			<div class="sidebar-content" id="locationsList">
-			</div>
-		</div>
-	</body>
+    <div class="footer"></div>
+</div>
+<button id="openLocationsSidebarBtn" class="sidebar-toggle-btn control-btn" aria-label="Open Farming Locations">
+    <span>Farming Locations</span>
+</button>
+<div class="locations-sidebar" id="locationsSidebar" aria-modal="true" role="dialog">
+    <div class="sidebar-header">
+        <h2>Farming Locations</h2>
+        <button class="close-sidebar-btn" aria-label="Close" id="closeLocationsSidebarBtn">✖</button>
+    </div>
+    <div class="sidebar-content" id="locationsList">
+    </div>
+</div>
+<script>
+    window.gtTooltipConfig = {
+        scale: 0.8,
+        delay: 50,
+    };
+</script>
+<script async src="https://dune.gaming.tools/embed.js"></script>
+</body>
 </html>
